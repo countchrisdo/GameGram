@@ -10,9 +10,9 @@ A website to share your best Videogame screenshots!
 
 ## Screenshots
 
-<img src="https://i.gifer.com/169Q.gif" alt="gif1" width="100%"/>
+<img src="https://64.media.tumblr.com/1b96fdbd77aafb4555d212782b6c5c12/tumblr_n43d37GQrH1rjxyrgo1_400.gifv" alt="gif1" width="100%"/>
 
-<img src="https://64.media.tumblr.com/f59055c539148821eec0748ad1573f3f/tumblr_n28gsh1kqW1rjxyrgo5_250.gif" alt="gif2" width="100%"/>
+<img src="https://64.media.tumblr.com/e3a814531db11b7f55448e700c4b6785/tumblr_n28gsh1kqW1rjxyrgo10_400.gifv" alt="gif2" width="100%"/>
 
 ## Tech
 - Html, CSS, JS
