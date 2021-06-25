@@ -1,7 +1,7 @@
 # GameGram
 A website to share your best Videogame screenshots!
 
-#link
+# link
 
 ## Feature List
 - OAuth Log-in with Google
@@ -24,9 +24,11 @@ A website to share your best Videogame screenshots!
 
 ## Getting Started
 - Deployed link goes here
+
+### Planning
 - [Trello Board](https://trello.com/b/z4Mcauc5/project-2-gamegram-chris)
 
-## What's next for GameGram?
+### What's next for GameGram?
 - Comments
 - Admins and Moderation
 - FanArt section
