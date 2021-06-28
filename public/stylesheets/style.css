@@ -1,8 +1,31 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  padding: .5vh;
 }
 
-a {
-  color: #00B7FF;
+body
+{
+  background-color: #292E34;
+  color: whitesmoke;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: cyan;
+}
+
+.icon {
+  width: 50px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+.darktext {
+  color: #292E34;
+}
+
+.lighttext {
+  color: whitesmoke;
 }
