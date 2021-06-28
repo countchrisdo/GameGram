@@ -1,5 +1,5 @@
 # GameGram
-A website to share your best Videogame screenshots!
+A web application to share your best Videogame screenshots!
 
 # link
 
