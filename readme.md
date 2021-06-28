@@ -1,5 +1,5 @@
 # GameGram
-A web application to share your best Videogame screenshots!
+A Web Application where you can share video game screenshots and in game photography. 
 
 # link
 
@@ -10,9 +10,9 @@ A web application to share your best Videogame screenshots!
 
 ## Screenshots
 
-<img src="https://64.media.tumblr.com/1b96fdbd77aafb4555d212782b6c5c12/tumblr_n43d37GQrH1rjxyrgo1_400.gifv" alt="gif1" width="100%"/>
+<img src="https://64.media.tumblr.com/1b96fdbd77aafb4555d212782b6c5c12/tumblr_n43d37GQrH1rjxyrgo1_400.gifv" alt="gif1" width="75%"/>
 
-<img src="https://64.media.tumblr.com/e3a814531db11b7f55448e700c4b6785/tumblr_n28gsh1kqW1rjxyrgo10_400.gifv" alt="gif2" width="100%"/>
+<img src="https://64.media.tumblr.com/e3a814531db11b7f55448e700c4b6785/tumblr_n28gsh1kqW1rjxyrgo10_400.gifv" alt="gif2" width="75%"/>
 
 ## Tech
 - Html, CSS, JS
