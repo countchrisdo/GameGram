@@ -8,6 +8,9 @@ body
   color: whitesmoke;
 }
 
+h1:hover {
+  color: cyan;
+}
 a:visited {
   color: white;
 }
@@ -27,5 +30,26 @@ a:hover {
 }
 
 .lighttext {
-  color: whitesmoke;
+  color: #25f4ee;
 }
+
+.review-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-user img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color:#FFFFFF; 
+  font-size:1.5em;
+  text-align: center;
+  }

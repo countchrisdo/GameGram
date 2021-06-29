@@ -5,7 +5,7 @@ A Web Application where you can share video game screenshots and in game photogr
 
 ## Feature List
 - OAuth Log-in with Google
-- image uploades
+- Image Uploads
 - Game pages to browse
 
 ## Screenshots
@@ -20,7 +20,8 @@ A Web Application where you can share video game screenshots and in game photogr
 - Express 
 - MongoDB
 - OAuth
-
+- Amazon Web Services
+- Heroku
 
 ## Getting Started
 - Deployed link goes here

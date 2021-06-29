@@ -12,13 +12,14 @@
     <img class="icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png">
     <a href="/games" <%- title === 'All GAMES' ? 'class="active"' : '' %>>ALL GAMES</a>
     <% if (user) { %>
-      <a href="/error"	<%- title === 'Add Performer' ? 'class="active"' : '' %>>
+      <a href="/error"	<%- title === 'Filler Link' ? 'class="active"' : '' %>>
       Filler Link</a>
       <a href="/games/new" <%- title === 'Add Movie' ? 'class="active"' : '' %>>ADD GAME</a>
       <a href="/logout">LOG OUT</a>
     <% } else { %>
-      <a href="/auth/google" class="login">LOG IN&nbsp;</a>
+      <a href="/auth/google" class="login">LOG IN</a>
     <% } %>
   </nav>
   <main>
-    <h1><%= title %></h1>
+    <h1>GameGram</h1>
+    <p>views/header.ejs working</p>
