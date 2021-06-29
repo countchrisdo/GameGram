@@ -17,11 +17,9 @@ title: {
     type: String,
     required: true
 },
-releaseYear: {
-    type: Number,
-    default: function () {
-    return new Date().getFullYear();
-    }
+genre: {
+    type: String,
+    enum: ['ACTION', 'RPG', 'STRATEGY','SIMULATION', 'SPORTS', 'ADVENTURE','CASUAL']
 },
 screenshots: [screenshotSchema]
 }, {

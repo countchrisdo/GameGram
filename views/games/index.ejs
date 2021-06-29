@@ -1,5 +1,24 @@
 <%- include('../partials/header') %>
 
-views/games/index.ejs
+<h1>All Games</h1>
+
+<table id="list">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% games.forEach(function(g) { %>
+        <tr>
+          <td><%= g.title %></td>
+          <td><%= g.genre %></td>
+          <td><a href="/movies/<%= g._id %>">VIEW</a></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
 
 <%- include('../partials/footer') %>
