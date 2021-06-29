@@ -14,10 +14,15 @@ function index(req, res) {
 }
 
 function show(req, res) {
-  Game.findById(req.params.id)
-          res.render('games/show', { title: 'Game Details', game, });
+  Game.findById(req.params.id, function(err, game){
+    res.render('games/show', { title: 'Game Details', game, });
+  })
 }
 
+// function show(req, res) {
+//   Game.findById(req.params.id)
+//     res.render('games/show', { title: 'Game Details', game, });
+// }
 function newGame(req, res) {
   res.render('games/new', { title: 'Add Game' });
 }

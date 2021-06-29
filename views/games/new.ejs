@@ -1,6 +1,22 @@
-<div>Before adding, please ensure that the Game is not in the following list:</div>
+<%- include('../partials/header') %>
+
+<!-- <div>Before adding, please ensure that the Game is not in the following list:</div> -->
+
+<div>Add your game</div>
 
 <form  action="/games" method="POST">
   <label>Title:</label>
   <input type="text" name="title">
+  <label>Genre:</label>
+  <select name="genre" id="inputGenre">
+    <option value="ACTION">ACTION</option>
+    <option value="RPG">RPG</option>
+    <option value="STRATEGY">STRATEGY</option>
+    <option value="SIMULATION">SIMULATION</option>
+    <option value="SPORTS">SPORTS</option>
+    <option value="ADVENTURE">ADVENTURE</option>
+    <option value="CASUAL">CASUAL</option>
+  </select>
 </form>
+
+<%- include('../partials/footer') %>
