@@ -1,7 +1,7 @@
 # GameGram
 A Web Application where you can share video game screenshots and in game photography. 
 
-# link
+## [Click Here](https://gamegram.herokuapp.com/)
 
 ## Feature List
 - OAuth Log-in with Google
@@ -21,10 +21,10 @@ A Web Application where you can share video game screenshots and in game photogr
 - MongoDB
 - OAuth
 - Amazon Web Services
-- Heroku
+- Heroku Deployment
 
 ## Getting Started
-- Deployed link goes here
+- https://gamegram.herokuapp.com/
 
 ### Planning
 - [Trello Board](https://trello.com/b/z4Mcauc5/project-2-gamegram-chris)
