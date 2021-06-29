@@ -1,21 +1,21 @@
-const Movie = require('../models/game');
+const Game = require('../models/game');
 
 module.exports = {
   index,
   show,
-  new: newMovie,
+  new: newGame,
   create
 };
 
 function index(req, res) {
-  Movie.find({}, function(err, movies) {
+  Game.find({}, function(err, games) {
     res.render('games/index', { title: 'All Games', games });
   });
 }
 
 function show(req, res) {
   Game.findById(req.params.id)
-          res.render('games/show', { title: 'Game Details', movie, });
+          res.render('games/show', { title: 'Game Details', game, });
 }
 
 function newGame(req, res) {

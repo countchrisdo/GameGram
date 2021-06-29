@@ -33,17 +33,6 @@ a:hover {
   color: #25f4ee;
 }
 
-.review-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.review-user img {
-  border-radius: 50%;
-  height: 40px;
-}
-
 footer {
   position: absolute;
   left: 0;
