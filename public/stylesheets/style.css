@@ -1,11 +1,8 @@
-* {
-  padding: .5vh;
-}
-
 body
 {
   background-color: #292E34;
   color: whitesmoke;
+  margin: 1em;
 }
 
 h1:hover {
@@ -33,16 +30,19 @@ a:hover {
   color: #25f4ee;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
+
+#IMGDiv {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+#IMGDiv img {
+  margin: 10px;
+  height: 250px;
+  box-shadow: 3px 3px 2px #25f4ee;
+  border: solid #25f4ee 1px;
 }
 
 footer {
@@ -50,7 +50,5 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color:#FFFFFF; 
-  font-size:1.5em;
   text-align: center;
   }

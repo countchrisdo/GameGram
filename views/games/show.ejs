@@ -12,22 +12,17 @@
 
 <h2>Screenshots</h2>
 
-  <div class="row">
-    <div class="column">
+<p>Upload</p>
+      <form method="post" action="upload/post" enctype="multipart/form-data">
+        <input type="file" name="image" /><br /><br />
+        <button type="submit" name="upload">Upload</button>
+      </form>
 
-      <img src="/routes/public/images/88c44710-3307-4fc6-b97a-522585bbd469.png" alt="">
 
-    </div>
-    <div class="column">
-
-      <img src="/routes/public/images/0dfe54b5-5142-4913-b3ae-8ccccdf5d6a3.png" alt="">
-
-    </div>
-    <div class="column">
-
-      <img src="/routes/public/images/0dfe54b5-5142-4913-b3ae-8ccccdf5d6a3.png" alt="">
-
-    </div>
+  <div id="IMGDiv" >
+      <img src="/images/ExzYTbrWEAE6VRi.jpeg" alt="testimg1">
+      <img src="/images/Ewopr9wW8AoZHay.jpeg" alt="testimg2">
+      <img src="/images/EwodEeRXAAkTbi5.jpeg" alt="testimg3">
   </div> 
 
 <%- include('../partials/footer') %>
