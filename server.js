@@ -16,7 +16,7 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var gamesRouter = require('./routes/games');
-var screenshotsRouter = require('./routes/screenshots');
+var screenshotsRouter = require('./routes/screenshots'); 
 
 var app = express();
 

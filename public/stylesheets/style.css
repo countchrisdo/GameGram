@@ -30,7 +30,6 @@ a:hover {
   color: #25f4ee;
 }
 
-
 #IMGDiv {
   margin: 50px;
   display: flex;
@@ -38,11 +37,16 @@ a:hover {
   flex-wrap: wrap;
 }
 
-#IMGDiv img {
+.screenshot {
   margin: 10px;
   height: 250px;
   box-shadow: 3px 3px 2px #25f4ee;
   border: solid #25f4ee 1px;
+}
+
+.screenshot-user img{
+  height: 50px;
+  width: auto;
 }
 
 footer {

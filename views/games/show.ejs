@@ -17,24 +17,43 @@
         <button type="submit" name="upload">Upload</button>
       </form> -->
 
-
+<% if (user) { %>
 <div>
-
   <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
     <label>IMG Link:</label>
     <textarea rows="1" cols="50" name="photoUrl"></textarea> <br>
     <label>Caption:</label>
     <textarea rows= "4" cols="50" name="caption" id="caption"></textarea>
     <br>
-
     <input type="submit" value="Add Screenshot">
-
 </div>
+<% } %>
 
-  <div id="IMGDiv" >
-      <img src="/images/ExzYTbrWEAE6VRi.jpeg" alt="testimg1">
-      <img src="/images/Ewopr9wW8AoZHay.jpeg" alt="testimg2">
-      <img src="/images/EwodEeRXAAkTbi5.jpeg" alt="testimg3">
-  </div> 
+<section id="screenshotSection">
+<% if (game.screenshots.length) { %>
+    <% game.screenshots.forEach(function(s) { %>
+      <td class="screenshot-user"><img src="<%= s.userAvatar %>"><%= s.userName %></td>
+        <td><%= s.createdAt.toLocaleDateString() %></td>
+        <td> <img class="screenshot" src="<%= s.photoUrl %>"></td>
+        <td><%= s.caption %></td>
+        <td>
+          <% if (user && user._id.equals(s.user)) { %>
+            <form action="/screenshot/<%= s._id %>?_method=DELETE" method="POST">
+              <button type="submit">X</button>
+            </form>
+          <% } %>
+        </td>
+      <% }); %>
+
+  <% } else { %>
+    <h5>No Screenshots Yet</h5>
+  <% } %>
+</section>
+
+<!-- <div id="IMGDiv" >
+    <img src="/images/ExzYTbrWEAE6VRi.jpeg" alt="testimg1">
+    <img src="/images/Ewopr9wW8AoZHay.jpeg" alt="testimg2">
+    <img src="/images/EwodEeRXAAkTbi5.jpeg" alt="testimg3">
+</div>  -->
 
 <%- include('../partials/footer') %>
