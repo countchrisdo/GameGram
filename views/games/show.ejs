@@ -3,20 +3,29 @@
 <section id="show-page">
   <div>Title: </div>
   <div><%= game.title %></div>
-  
+  <div>Genre: </div>
+  <div><%= game.genre %></div>
 </section>
 
-<img src="/routes/public/images/88c44710-3307-4fc6-b97a-522585bbd469.png" alt="">
- 
 <br><br>
 
 <h2>Screenshots</h2>
 
-<p>Upload</p>
+<div>
+
+  <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
+    <label>IMG:</label>
+    <textarea name="content"></textarea>
+    <input type="submit" value="Add Screenshot">
+
+</div>
+
+<!-- <p>Upload</p>
       <form method="post" action="upload/post" enctype="multipart/form-data">
         <input type="file" name="image" /><br /><br />
         <button type="submit" name="upload">Upload</button>
-      </form>
+      </form> -->
+
 
 
   <div id="IMGDiv" >
