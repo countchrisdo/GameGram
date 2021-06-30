@@ -2,7 +2,11 @@
 
 <p>views/index.ejs working</p>
 
-
+<p>Image Upload</p>
+      <form method="post" action="upload/post" enctype="multipart/form-data">
+        <input type="file" name="image" /><br /><br />
+        <button type="submit" name="upload">Upload</button>
+      </form>
 
 <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -22,10 +26,6 @@
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀</pre>
 
-  <details>
-    <summary>If you click me, something special will happen</summary>
 
-    <iframe src="https://player.vimeo.com/video/568955222" width="640" height="538" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</details>
-  
+
 <%- include('./partials/footer') %>

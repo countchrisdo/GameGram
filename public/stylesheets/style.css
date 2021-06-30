@@ -33,6 +33,18 @@ a:hover {
   color: #25f4ee;
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 footer {
   position: absolute;
   left: 0;

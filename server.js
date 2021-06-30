@@ -2,10 +2,13 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+
 var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
+
+
 
 // Process the .env VERY early
 require('dotenv').config();
@@ -26,7 +29,9 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+//different from img guide
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
 app.use(cookieParser());
 app.use(methodOverride('_method'));
 
@@ -50,6 +55,8 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/games', gamesRouter);
 app.use('/', screenshotsRouter);
+app.use('/upload', screenshotsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

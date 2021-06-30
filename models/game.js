@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const screenshotSchema = new Schema({
-    // content: {type: String, required: true},
+    content: {type: String, required: true},
     user: {type: Schema.Types.ObjectId, ref: 'User'},
     photoUrl: String,
     caption: String,
