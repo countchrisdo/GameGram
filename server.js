@@ -8,8 +8,6 @@ var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
-
-
 // Process the .env VERY early
 require('dotenv').config();
 
@@ -55,7 +53,7 @@ app.use(function(req, res, next) {
 app.use('/', indexRouter);
 app.use('/games', gamesRouter);
 app.use('/', screenshotsRouter);
-app.use('/upload', screenshotsRouter);
+// app.use('/upload', screenshotsRouter);
 
 
 // catch 404 and forward to error handler

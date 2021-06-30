@@ -11,15 +11,6 @@
 
 <h2>Screenshots</h2>
 
-<div>
-
-  <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
-    <label>IMG:</label>
-    <textarea name="content"></textarea>
-    <input type="submit" value="Add Screenshot">
-
-</div>
-
 <!-- <p>Upload</p>
       <form method="post" action="upload/post" enctype="multipart/form-data">
         <input type="file" name="image" /><br /><br />
@@ -27,6 +18,18 @@
       </form> -->
 
 
+<div>
+
+  <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
+    <label>IMG Link:</label>
+    <textarea rows="1" cols="50" name="photoUrl"></textarea> <br>
+    <label>Caption:</label>
+    <textarea rows= "4" cols="50" name="caption" id="caption"></textarea>
+    <br>
+
+    <input type="submit" value="Add Screenshot">
+
+</div>
 
   <div id="IMGDiv" >
       <img src="/images/ExzYTbrWEAE6VRi.jpeg" alt="testimg1">
