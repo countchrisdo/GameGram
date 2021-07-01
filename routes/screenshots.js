@@ -2,12 +2,13 @@ const express = require('express');
 // const app = express();
 // const path = require('path');
 const router = express.Router();
+const passport = require('passport');
 
 // const upload = require('../uploadMiddleware');
 // const Resize = require('../Resize');
 
-const screenshotsCtrl = require('../controllers/screenshots');
 const isLoggedIn = require('../config/auth');
+const screenshotsCtrl = require('../controllers/screenshots');
 
 // router.get('/', async function (req, res) {
 //     await res.render('index');
@@ -23,7 +24,9 @@ const isLoggedIn = require('../config/auth');
 // return res.status(200).json({ name: filename });
 // });
 
+router.get('/screenshots/:id/edit', isLoggedIn, screenshotsCtrl.edit);
 router.post('/games/:id/screenshots', isLoggedIn, screenshotsCtrl.create);
-router.delete('/games/:id', isLoggedIn, screenshotsCtrl.delete);
+router.put('/screenshots/:id', isLoggedIn, screenshotsCtrl.update);
+router.delete('/screenshots/:id', isLoggedIn, screenshotsCtrl.delete);
 
 module.exports = router;

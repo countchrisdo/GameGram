@@ -30,27 +30,44 @@ a:hover {
   color: #25f4ee;
 }
 
+#screenshotSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  border: 5px white solid;
+}
+
 #IMGDiv {
-  margin: 50px;
+  margin: 25px;
+  width: 250px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.caption {
+  width: 250px;
+  padding: 10px;
+  border:solid cyan 1px;
+  margin-bottom: 1px;
+}
+
 .screenshot {
   margin: 10px;
-  height: 250px;
+  width: 250px;
   box-shadow: 3px 3px 2px #25f4ee;
   border: solid #25f4ee 1px;
 }
 
-.screenshot-user img{
-  height: 50px;
+#screenshot-user{
+  height: 15px;
   width: auto;
+  margin-right: 5px;
 }
 
 footer {
-  position: absolute;
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;

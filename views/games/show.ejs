@@ -7,7 +7,7 @@
   <div><%= game.genre %></div>
 </section>
 
-<br><br>
+<br>
 
 <h2>Screenshots</h2>
 
@@ -23,26 +23,37 @@
     <label>IMG Link:</label>
     <textarea rows="1" cols="50" name="photoUrl"></textarea> <br>
     <label>Caption:</label>
-    <textarea rows= "4" cols="50" name="caption" id="caption"></textarea>
-    <br>
+    <textarea rows= "4" cols="50" name="caption" class="caption"></textarea>
+    <br><br>
     <input type="submit" value="Add Screenshot">
+    <br><br>
+  </form>
 </div>
 <% } %>
 
 <section id="screenshotSection">
 <% if (game.screenshots.length) { %>
     <% game.screenshots.forEach(function(s) { %>
-      <td class="screenshot-user"><img src="<%= s.userAvatar %>"><%= s.userName %></td>
-        <td><%= s.createdAt.toLocaleDateString() %></td>
-        <td> <img class="screenshot" src="<%= s.photoUrl %>"></td>
-        <td><%= s.caption %></td>
-        <td>
+      <div id="IMGDiv">
+      <img id="screenshot-user" src="<%= s.userAvatar %>"><%= s.userName %>
+       <%= s.createdAt.toLocaleDateString() %>
+        <div class="imgCapDiv"> <img class="screenshot" src="<%= s.photoUrl %>">
+        <div class="caption"><%= s.caption %></div>
+      </div>
+        <div>
           <% if (user && user._id.equals(s.user)) { %>
-            <form action="/screenshot/<%= s._id %>?_method=DELETE" method="POST">
-              <button type="submit">X</button>
+            <form action="/screenshots/<%= s._id %>?_method=DELETE" method="POST">
+              <button type="submit">Delete</button>
             </form>
+
+            <% if (s.user.equals(user._id)) { %>
+              <a href="/screenshots/<%= s._id %>/edit">Edit</a>
+            <% } %>
+
+            <br>
           <% } %>
-        </td>
+        </div>
+      </div>
       <% }); %>
 
   <% } else { %>

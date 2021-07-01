@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<form action="/screenshots/<%= screenshot._id %>?_method=PUT" method="POST" id="add-screenshot-form">
+        <label>Caption:</label>
+        <br>
+        <textarea rows= "4" cols="50" name="caption" class="caption"></textarea>
+        <br><br>
+        <input type="submit" value="Update">
+</form>
+
+<%- include('../partials/footer') %>
