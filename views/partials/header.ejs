@@ -5,20 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
   <title><%= title %></title>
 </head>
 <body>
   <nav>
-    <img class="icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png">
-    <a href="/games" <%- title === 'All GAMES' ? 'class="active"' : '' %>>ALL GAMES</a>
-    <% if (user) { %>
-      <a href="/error"	<%- title === 'Filler Link' ? 'class="active"' : '' %>>
-      Filler Link</a>
-      <a href="/games/new" <%- title === 'Add Game' ? 'class="active"' : '' %>>ADD GAME</a>
-      <a href="/logout">LOG OUT</a>
+      <img class="icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/WPVG_icon_2016.svg/1024px-WPVG_icon_2016.svg.png">
+    
+      <button><a href="/"	<%- title === 'HOME' ? 'class="active"' : '' %>>
+      HOME</a></button>
+
+      <button><a href="/games" <%- title === 'All GAMES' ? 'class="active"' : '' %>>ALL GAMES</a>
+        
+    <% if (user) { %> </button>
+     
+      <button><a href="/games/new" <%- title === 'Add Game' ? 'class="active"' : '' %>>ADD GAME</a>  </button>
+
+      <button class='loginoutBtn'><a href="/logout">LOG OUT</a> </button>
+
     <% } else { %>
-      <a href="/auth/google" class="login">LOG IN</a>
-    <% } %>
+
+      <button class='loginoutBtn'> <a href="/auth/google" <%- title === 'Log in' ? 'class="active"' : '' %>>LOG IN</a> </button>
+  
+      <% } %>
   </nav>
   <main>
-    <h1><%= title %></h1>

@@ -1,25 +1,53 @@
+@import url('http://fonts.cdnfonts.com/css/gotham-pro');
+
 body
 {
   background-color: #292E34;
   color: whitesmoke;
   margin: 1em;
+  font-family: 'Gotham Pro', sans-serif;
+  font-family: 'Gotham Pro Medium', sans-serif;
+}
+
+button {
+  padding: 10px;
 }
 
 h1:hover {
   color: cyan;
 }
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+nav button {
+  font-size: 3vh;
+  border: 1px solid cyan;
+  border-radius: 5px;
+}
+
+nav img {
+  width: 6vh;
+  vertical-align: middle;
+  margin-right: 1vh;
+}
+
+.loginoutBtn {
+  position: fixed;
+  right: 30px;
+}
+
+nav a:visited {
+  color: black;
+}
+
 a:visited {
-  color: white;
+  color: whitesmoke;
 }
 
 a:hover {
   color: cyan;
-}
-
-.icon {
-  width: 50px;
-  object-fit: contain;
-  margin-right: auto;
 }
 
 .darktext {
