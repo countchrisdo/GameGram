@@ -1,26 +1,52 @@
 <%- include('./partials/header') %>
 
- <h1> Preview </h1>
- 
- <hr>
+<h1> Game Gram </h1> 
+<h2> A Social Website for your Video Game Screenshots! </h2> 
 
-<pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⣿⣿⣷⣶⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⡟⠁⣰⣿⣿⣿⡿⠿⠻⠿⣿⣿⣿⣿⣧⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⠏⠀⣴⣿⣿⣿⠉⠀⠀⠀⠀⠀⠈⢻⣿⣿⣇⠀⠀⠀
-  ⠀⠀⠀⠀⢀⣠⣼⣿⣿⡏⠀⢠⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⡀⠀⠀
-  ⠀⠀⠀⣰⣿⣿⣿⣿⣿⡇⠀⢸⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀
-  ⠀⠀⢰⣿⣿⡿⣿⣿⣿⡇⠀⠘⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢀⣸⣿⣿⣿⠁⠀⠀
-  ⠀⠀⣿⣿⣿⠁⣿⣿⣿⡇⠀⠀⠻⣿⣿⣿⣷⣶⣶⣶⣶⣶⣿⣿⣿⣿⠃⠀⠀⠀
-  ⠀⢰⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀
-  ⠀⢸⣿⣿⡇⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠛⠉⢉⣿⣿⠀⠀⠀⠀⠀⠀
-  ⠀⢸⣿⣿⣇⠀⣿⣿⣿⠀⠀⠀⠀⠀⢀⣤⣤⣤⡀⠀⠀⢸⣿⣿⣿⣷⣦⠀⠀⠀
-  ⠀⠀⢻⣿⣿⣶⣿⣿⣿⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣦⡀⠀⠉⠉⠻⣿⣿⡇⠀⠀
-  ⠀⠀⠀⠛⠿⣿⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠈⠹⣿⣿⣇⣀⠀⣠⣾⣿⣿⡇⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⠹⣿⣿⣿⣿⣦⣤⣤⣤⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⢿⣿⣿⣿⣿⣿⣿⠿⠋⠉⠛⠋⠉⠉⠁⠀⠀⠀⠀
-  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀</pre>
+<% if (!user) { %>
+<ul>
+  <li>Share Image links to your screenshots and they display here</li>
+  <li>Add your own Captions!</li>
+  <li>Log in to begin!</li>
+</ul>
+<% } %>
+
+<h1> Preview </h1>
+ 
+ <section class="screenshotSection">
+
+  <div id="IMGDiv">
+    <img id="screenshot-user" src="https://lh3.googleusercontent.com/a-/AOh14Gi3jurdCQkkgAd33FGAyRSn_nwOvZwBchaHEsxUdg=s96-c">Rose H
+     7/1/2021
+      <div class="imgCapDiv"> <img class="screenshot" src="https://pbs.twimg.com/media/EUo17hAUEAAyezI?format=jpg&amp;name=large">
+      <div class="caption">new house who dis</div>
+    </div>
+      <div>
+        
+      </div>
+    </div>
+    
+
+        <div id="IMGDiv">
+        <img id="screenshot-user" src="https://lh3.googleusercontent.com/a-/AOh14Gh6myiACLF3g57VtRZWC9ZJyW_YF5sccPYFuYCADw=s96-c">Countchrisdo
+         7/1/2021
+          <div class="imgCapDiv"> <img class="screenshot" src="https://pbs.twimg.com/media/E5PJw8gUUAUjOqD?format=jpg&amp;name=large">
+          <div class="caption">me after I mess up the cobblestone generator</div>
+        </div>
+
+        </div>
+        
+        <div id="IMGDiv">
+        <img id="screenshot-user" src="https://lh3.googleusercontent.com/a-/AOh14Gh6myiACLF3g57VtRZWC9ZJyW_YF5sccPYFuYCADw=s96-c">Countchrisdo
+         7/1/2021
+          <div class="imgCapDiv"> <img class="screenshot" src="https://pbs.twimg.com/media/E5PR9UPWYAknIeb?format=jpg&amp;name=medium">
+          <div class="caption">never get tired of the most ridiculous things being done with minecraft in smash</div>
+        </div>
+        </div>
+  
+ </section>
+
+
 
   <!-- <p>Image Upload</p>
       <form method="post" action="upload/post" enctype="multipart/form-data">

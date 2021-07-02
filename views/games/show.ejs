@@ -1,15 +1,9 @@
 <%- include('../partials/header') %>
-
-<section id="show-page">
-  <div>Title: </div>
-  <div><%= game.title %></div>
-  <div>Genre: </div>
-  <div><%= game.genre %></div>
-</section>
+<br><br>
+  <h1>Title: <%= game.title %></h1>
+  <h1>Genre: <%= game.genre %></h1>
 
 <br>
-
-<h1>Screenshots</h2>
 
 <!-- <p>Upload</p>
       <form method="post" action="upload/post" enctype="multipart/form-data">
@@ -17,21 +11,9 @@
         <button type="submit" name="upload">Upload</button>
       </form> -->
 
-<% if (user) { %>
-<div>
-  <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
-    <label>IMG Link:</label>
-    <textarea rows="1" cols="50" name="photoUrl"></textarea> <br>
-    <label>Caption:</label>
-    <textarea rows= "4" cols="50" name="caption" class="caption"></textarea>
-    <br><br>
-    <input type="submit" value="Add Screenshot">
-    <br><br>
-  </form>
-</div>
-<% } %>
 
-<section id="screenshotSection">
+
+<section class="screenshotSection">
 <% if (game.screenshots.length) { %>
     <% game.screenshots.forEach(function(s) { %>
       <div id="IMGDiv">
@@ -40,15 +22,16 @@
         <div class="imgCapDiv"> <img class="screenshot" src="<%= s.photoUrl %>">
         <div class="caption"><%= s.caption %></div>
       </div>
-        <div>
+        <div class="editDelBtnDiv">
           <% if (user && user._id.equals(s.user)) { %>
+            
+            <% if (s.user.equals(user._id)) { %>
+              <button type="submit" onclick="window.location.href='/screenshots/<%= s._id %>/edit';">Edit</button>
+            <% } %>
+            
             <form action="/screenshots/<%= s._id %>?_method=DELETE" method="POST">
               <button type="submit">Delete</button>
             </form>
-
-            <% if (s.user.equals(user._id)) { %>
-              <a href="/screenshots/<%= s._id %>/edit">Edit</a>
-            <% } %>
 
             <br>
           <% } %>
@@ -61,10 +44,29 @@
   <% } %>
 </section>
 
+<% if (user) { %>
+  <details>
+    <summary>Want to upload? Click here!</summary>
+  <p>To share and image, link your image here and add a caption! <br> Don't have it uploaded online yet? Use <a href="https://imgur.com/upload">imgur.com</a> </p>
+  
+  <form id="add-screenshot-form" method="POST" action="/games/<%= game._id %>/screenshots">
+    <label>IMG Link:</label>
+    <textarea rows="1" cols="50" name="photoUrl"></textarea> <br>
+    <label>Caption:</label>
+    <textarea rows= "4" cols="50" name="caption" class="caption"></textarea>
+    <br><br>
+    <input class="submitBtn" type="submit" value="Add Screenshot">
+    <br><br>
+  </form>
+</details>
+<% } %>
+
 <!-- <div id="IMGDiv" >
     <img src="/images/ExzYTbrWEAE6VRi.jpeg" alt="testimg1">
     <img src="/images/Ewopr9wW8AoZHay.jpeg" alt="testimg2">
     <img src="/images/EwodEeRXAAkTbi5.jpeg" alt="testimg3">
 </div>  -->
 
-<%- include('../partials/footer') %>
+ </main>
+</body>
+</html>

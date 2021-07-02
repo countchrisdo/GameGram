@@ -2,11 +2,14 @@
 
 <!-- <h2>Before adding, please ensure that the Game is not in the following list:</h2> -->
 
+<h1>Game Gram</h1>
+
 <h2>Before adding, please ensure that the Game is not already listed on GameGram</h2>
 
-<div>Add your game</div>
+<h1>Add your game</h1>
 
-<form  action="/games" method="POST">
+<section id="addGameForm">
+<form  action="/games" method="POST" >
   <label>Title:</label>
   <input type="text" name="title">
   <label>Genre:</label>
@@ -19,6 +22,10 @@
     <option value="ADVENTURE">ADVENTURE</option>
     <option value="CASUAL">CASUAL</option>
   </select>
+  <div>
+    <input class="submitBtn" type="submit" value="Add Game">
+</div>
 </form>
+</section>
 
 <%- include('../partials/footer') %>

@@ -6,14 +6,28 @@ body
   color: whitesmoke;
   margin: 1em;
   font-family: 'Gotham Pro', sans-serif;
-  font-family: 'Gotham Pro Medium', sans-serif;
+  font-family: 'Gotham Pro Medium', sans-serif; 
 }
 
 button {
   padding: 10px;
 }
 
+.submitBtn {
+  padding: 10px;
+  margin: 1vh;;
+}
+
+.editDelBtnDiv {
+  display: inline-flex;
+  margin: 1vh;
+}
+
 h1:hover {
+  color: #FE2C55;
+}
+
+h2:hover {
   color: cyan;
 }
 
@@ -34,8 +48,17 @@ nav img {
 }
 
 .loginoutBtn {
-  position: fixed;
+  position: absolute;
   right: 30px;
+}
+
+
+a {
+  color: whitesmoke;
+}
+
+nav a {
+  color: black;
 }
 
 nav a:visited {
@@ -46,8 +69,22 @@ a:visited {
   color: whitesmoke;
 }
 
+
 a:hover {
   color: cyan;
+}
+
+#addGameForm {
+  text-align: center;
+}
+
+ul, ol {
+  font-size: 2vh;
+  text-align: center;
+}
+
+li {
+  line-height: 1.2;
 }
 
 .darktext {
@@ -58,7 +95,7 @@ a:hover {
   color: #25f4ee;
 }
 
-#screenshotSection {
+.screenshotSection {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -74,10 +111,10 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.caption {
+textarea {
+  border:solid cyan 1px;
   width: 250px;
   padding: 10px;
-  border:solid cyan 1px;
   margin-bottom: 1px;
 }
 
@@ -94,10 +131,43 @@ a:hover {
   margin-right: 5px;
 }
 
+caption {
+  padding: 5px;
+}
+
+thead {
+  color: #FE2C55;
+  
+}
+
+table {
+  width: 90%;
+  text-align: left;
+  font-size: 3vh;
+  padding-left: 15vh;
+}
+
+th, td {
+  padding: 0.6vh;
+}
+
+td:hover {
+  color: cyan;
+}
+
+details, details form { 
+  margin: 1vh;
+}
+
+details a {
+  color: cyan !important;
+}
+
 footer {
   position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  line-height: 0.5;
   }

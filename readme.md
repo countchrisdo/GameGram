@@ -5,14 +5,17 @@ A Web Application where you can share video game screenshots and in game photogr
 
 ## Feature List
 - OAuth Log-in with Google
-- Image Uploads
+- Image Linking
+- Captions
 - Game pages to browse
 
 ## Screenshots
 
-<img src="https://64.media.tumblr.com/1b96fdbd77aafb4555d212782b6c5c12/tumblr_n43d37GQrH1rjxyrgo1_400.gifv" alt="gif1" width="75%"/>
+<img src="https://i.imgur.com/izBaW3D.png" alt="img1" width="75%"/>
 
-<img src="https://64.media.tumblr.com/e3a814531db11b7f55448e700c4b6785/tumblr_n28gsh1kqW1rjxyrgo10_400.gifv" alt="gif2" width="75%"/>
+<img src="https://i.imgur.com/GQhkWad.png" alt="img2" width="75%"/>
+
+<img src="https://i.imgur.com/sRvOCoS.png" alt="img2" width="75%"/>
 
 ## Tech
 - Html, CSS, JS
@@ -20,7 +23,6 @@ A Web Application where you can share video game screenshots and in game photogr
 - Express 
 - MongoDB
 - OAuth
-- Amazon Web Services
 - Heroku Deployment
 
 ## Getting Started
