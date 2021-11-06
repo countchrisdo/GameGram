@@ -29,9 +29,10 @@ A Web Application where you can share video game screenshots and in-game photogr
 - [Trello Board](https://trello.com/b/z4Mcauc5/project-2-gamegram-chris)
 
 ### What's next for GameGram?
-- Comments
+- Comments on Images
+- Comments on Games
+- Likes on Images
 - Admins and Moderation
 - FanArt section
 - Profile Pages
-- Likes
-- Easy Sharing and Exporting
+- Easier Sharing and Exporting
